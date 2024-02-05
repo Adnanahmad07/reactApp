@@ -1,0 +1,213 @@
+/* stylin Navbar section  */
+body,
+html {
+    width: 100%;
+    height: 1000%;
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+
+
+.Navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    justify-content: space-between;
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.312);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+}
+
+.img-wrap {
+    width: 100px;
+    margin-right: 10rem;
+    margin-left: 1rem;
+
+}
+
+.img-wrap img {
+    width: 60px;
+    margin-top: 0.5rem;
+}
+
+.navigate-wrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 900px;
+    /* background-color: rgba(209, 196, 14, 0.905); */
+
+
+}
+
+.navigate-wrap a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 300;
+
+}
+
+.mobnav {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-75%);
+    display: none;
+
+
+}
+
+.mobnav p {
+    margin: -0.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+@media(max-width: 750px) {
+    .navigate-wrap {
+        display: none;
+    }
+
+    .mobnav {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+.mobdiv {
+    width: 300px;
+    height: 100%;
+    background-color: red;
+    position: fixed;
+    right: -300px;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hero section css  */
+.hero-container {
+    width: 100vw;
+    height: 800px;
+    background-color: lightblue;
+    margin-top: 70px;
+}
+
+.hero-word-container {
+    /* border: 1px solid; */
+
+}
+
+
+@media(max-width: 800px) {
+    .hero-container {
+        width: 100vw;
+        height: 800px;
+        background-color: lightblue;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .hero-word-container {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 400px;
+        height: 400px;
+        margin-right: 2.5rem;
+
+
+
+
+    }
+
+    .hero-word-container h2 {
+        font-size: 45px;
+        font-weight: 900;
+        text-wrap: wrap;
+        max-width: 400px;
+
+    }
+
+    .hero-word-container p {
+        font-size: 22px;
+    }
+
+    .hero-word-container p span {
+        color: rgb(10, 112, 213);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .hero-word-container .let-talk-btn {
+        align-self: flex-start;
+        padding: 0.5rem 2rem;
+        font-size: 22px;
+        color: black;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        background-color: rgb(54, 194, 241);
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+
+
+
+    }
+
+    .let-talk-btn:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .let-talk-btn:active {
+        opacity: 0.7;
+    }
+
+}
